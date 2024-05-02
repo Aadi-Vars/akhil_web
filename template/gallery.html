@@ -1,0 +1,119 @@
+{% load static %}
+{% static "akhil_img" as baseUrl %}
+
+<html>
+<head>
+<title> Gallery</title>
+<!-- google icon-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+	*{margin:0px;padding:0px;box-sizing:border-box;}
+	body{background:linear-gradient(#7C8896,#C39D86)}
+	.material-symbols-outlined {
+		  font-variation-settings:
+			  'FILL' 0,
+ 			 'wght' 400,
+ 			 'GRAD' 0,
+  			'opsz' 24
+}
+	#home_icon{
+		font-size:60px;
+		color:white;
+		padding:10px;
+		margin-left:10px;}
+	
+	.heading{
+		text-align:center;
+		font-size:50px;
+		color:white;
+		padding:50px;
+		font-family: 'Tilt Neon', sans-serif;
+		margin-top:-50px;}
+	
+	#gallery_div{
+		margin-bottom:5vh;
+		margin-left:-5vw;
+		}
+	
+	 #gallery_subdiv{
+	 display:flex;
+	 margin:10vw;
+	margin-bottom:30px;
+	margin-top:30px;}
+		
+
+		
+	#akhil_img{
+		width:30vw;
+		border: 5px solid white;
+		border-top-width:10px;
+		border-top-right-radius:50px;
+		border-bottom-left-radius:50px;
+		box-shadow:10px 10px 5px;
+		}
+		
+	#akhil_txt{
+		width:40vw;
+		height:auto;
+		text-align:center;
+		margin-top:auto;
+		margin-bottom:auto;
+		align:center;
+		font-size:50px;
+		color:white;
+		font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;}
+		
+	.right_div{margin-left:5vw;}
+	.left_div{margin-right:5vw;}
+		
+	@media (max-width:1000px){#akhil_img{width:40vw;}}
+	
+</style>
+</head>
+<body>
+
+<div id="header">
+<a href="/">
+	<span id="home_icon" class="material-symbols-outlined"> home </span></a>
+	<p class="heading"> Gallery</p>
+	
+</div>
+
+<div id="gallery_div">
+	{% for obj in object %}
+<div id="gallery_subdiv">'
+
+	{% if obj.even %}
+	<div class="left_div">
+		<img id="akhil_img" src="{{baseUrl}}/{{obj.img}}"></img>
+	</div>
+	
+	<div class="right_div" id="akhil_txt">
+		<p>{{obj.text}}<p>
+		</div>
+	<div style="clear:both"></div>
+	
+	{% else %}
+	
+	<div class="left_div" id="akhil_txt">
+		<p>{{obj.text}}<p>
+	</div>
+		
+	<div class="right_div">
+		<img id="akhil_img" src="{{baseUrl}}/{{obj.img}}"></img>
+	</div>
+	<div style="clear:both;"></div>
+
+		
+	{% endif %}
+	
+	</div>
+	{% endfor %}
+</div>
+</body>
+</html>

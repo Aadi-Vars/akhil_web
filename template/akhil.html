@@ -1,0 +1,283 @@
+{% load static %}
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<!-- google icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<!-- swiper from CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<style>
+	*{margin:0px;padding:0px;box-sizing:border-box;}
+	body{background:linear-gradient(#7C8896,#C39D86)}
+	
+	
+	#header{overflow:auto}
+	
+	.material-symbols-outlined {
+		  font-variation-settings:
+ 		 'FILL' 0,
+  		'wght' 400,
+		  'GRAD' 0,
+ 		 'opsz' 24}
+ 		 
+	 #menu_icon{
+		 color:black;
+		 font-size:75px;
+		 padding:20px;}
+	
+	#social_media{
+		width:40vw;
+		padding:20px;
+		float:right;
+		text-align:right;}
+
+		
+	.logo{width:55px;height:auto;margin-right:20px;}
+	
+	#may_i_div{width:90vw;
+		background-color:rgba(195, 157, 134,0.8);
+		margin-left:5vw;
+		margin-right:5vw;
+		margin-top:50px;
+		border-radius:50px;
+		padding:20px;
+		height:fit-content;
+		overflow:auto;}
+	.heading{
+		text-align:center;
+		font-size:50px;
+		color:black;
+		padding:50px;
+		font-family: 'Tilt Neon', sans-serif;}
+		
+	
+		
+	#may_i_text{
+		width:40%;
+		heght:fit-content;
+		float:right;
+		text-align:justify;
+		margin-right:5%;
+		margin-bottom:20px;
+		font-size:20px;
+		color:black;
+		font-family: 'Satisfy', cursive;}
+	
+		
+	#may_i_img{
+		float:left;
+		display:block;
+		margin-top:30px;
+		margin-right:5%;
+		margin-left:5%;
+		width:45%;
+		height:550px;
+		border-radius:30px;
+		border:10px solid #7C8896;
+		border-top-width:5px;
+		box-shadow:5px 5px 5px white;}
+
+	
+	#swiper_subdiv{display:flex;
+		margin:10vw;
+		margin-bottom:0px;}
+	
+	#swiper_left{width:40vw;
+		line-height:50px;
+		}
+		
+	#two_lines{
+	text-align:justify;
+	font-size:40px;
+	font-weight:550;
+	color:white;
+	padding:20px;
+	border: 3px solid white;
+	border-radius:20px;
+	border-top-width:10px;
+	font-family: 'Satisfy', cursive;}
+	
+	
+	#more_button h5{
+		font-size:20px;
+		color:white;
+		padding:25px;
+		margin-top:-50px;
+		text-decoration:none;
+		text-align:center;
+		background:white;
+		color:black;
+		width:150px;
+		border: 5px solid black;
+		border-radius:40px;
+	}
+	.swiper{
+  		width: 30%;
+		  height:fit-content;
+		  border: 5px solid black;
+		  border-top-right-radius:50px;
+		  border-bottom-left-radius:50px;}
+	
+	
+	.swiper-wrapper{width:100%}
+	.swiper-slide img{
+	width:100%;}
+	
+	#talent_div{
+		margin-top:10px;}
+	#video_text{
+		margin-left:5%;
+		margin-right:5%;
+		margin-top:50px;
+		margin-bottom:50px;
+		font-size:20px;
+		text-align:center;
+		font-weight:550;
+		color:black;
+		font-family: 'Tilt Neon', sans-serif;}
+	video{	
+		display:block;
+		height:800px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:5px;
+		border:3px solid white;
+		border-top-width:5px;
+		border-top-right-radius:30px;
+		border-bottom-left-radius:30px;
+		box-shadow:10px 10px 5px black;
+	}
+	#contact_us{font-size:35px;}
+	#footer_div{
+		background-color:rgba(0,71,171,0.4);
+		color:white;
+		margin:10px;
+		margin-top:50px;
+		height:fit-content;
+		border-radius:20px;
+		padding:20px;
+		font-size:30px;
+		font-family: 'Satisfy', cursive;}
+		
+	@media (max-width:1000px){#may_i_text{float:none;width:90%;margin-left:auto;margin-right:auto;margin-top:20px;font-size:35px;}}
+	@media (max-width:1000px){#may_i_img{float:none;width:75%;height:auto;margin-left:auto;margin-right:auto;}}
+	
+	@media (max-width:1000px){.swiper{width:45%;}}
+	
+	@media (max-width:1000px){#footer_div{font-size:25px;}}
+	
+	@media (max-width:1000px){#contact_us{font-size:30px;}}
+
+</style>
+<title>Akhil</title>
+</head>
+<body>
+<div id='header'>
+<div id="social_media">
+	<a href="https://www.linkedin.com/in/akhil-patnaik-52806b284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img id="linkedin_icon" class="logo" src="{% static '/img/linkedin.png' %}"></a>
+	<a href="https://www.instagram.com/akhil_patnaik__?igsh=MW02OGplOGY5andyag=="><img id="instagram_icon" class="logo" src="{% static '/img/instagram.png' %}"></a>
+</div>
+
+</div>
+<div id="may_i_div">
+	<h2 id="may_i_head" class="heading">Akhil Patnaik</h2>
+
+	<div id="may_i_img_div">
+	<img id="may_i_img" src="{% static '/img/akhil.jpg' %}">
+	</div>
+	<p id="may_i_text">HAPIIEESSTTT BIRTHDAAYYY to the most handsome, sweet, cuteee and the most caring boy ever could exist in the world🌎❤️. Thankk youu so muchh darling for coming in my life and teach me to live my life to my fullest. For teaching me many good and bad things,  you define self love to me. You give the confidence I could never dream of having. I was so insecure about many things which you vanished like a magician. You are my kohinoor heeraa babyyy 💎❤️. I wish you get everything you dream of and achieve great grand success .I hope till now you might have guessed who is this, if not betaa teri khair nhii mil tu merkoo fir btati hu terkoo achhe se 😂
+</div>
+
+<div id="swiper_div">
+	<div class="heading"><p>Gallery</p></div>
+	<div id="swiper_subdiv">
+	<div id="swiper_left">
+		<p id="two_lines">Ye chand sa roshan chehara<br>Zulfon ka rang sunehara<br>Ye zil si nili aankhe koi<br>Raaj hain in mein gehara<br>Taarif karu kya us ki<br>Jis ne tumhe banaya</p>
+		<br><br><a id="more_button" href="gallery"><h5>More...</h5></a>
+	</div>
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="{% static '/akhil_img/swiper_img_1.jpg' %}"></div>
+    <div class="swiper-slide"><img src="{% static '/akhil_img/4.jpg' %}"></div>
+    <div class="swiper-slide"><img src="{% static '/akhil_img/swiper_img_3.jpg' %}"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+</div>
+
+<div id="talent_div">
+	<p id="video_text">Time for a cringe video although the cutestt for me but might be cringe for you😂🤌🏻</p>
+	<video controls autoplay id="autoplay">
+ 		 <source src="{% static '/video/akhil.mp4' %}" type="video/mp4">
+	</video>
+	
+	
+</div>
+
+<div id="footer_div">
+<p id="contact_us">Contact Us</p><br>
+	<span class="material-symbols-outlined" style="color:white,font-size:40px;">
+		call</span>   +916260425677<br>
+
+	<span class="material-symbols-outlined">
+		mail </span>  akhilpatnaik1234@gmail.com<br>
+		
+		
+	
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>const swiper = new Swiper('.swiper', {
+	autoplay:{
+		delay: 3000,
+		disableOnInteraction:false,
+	},
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+window.onload=function(){
+	document.getElementById("autoplay").play();
+}
+ 
+   
+</script>
+
+
+</body>
+
+</html>
